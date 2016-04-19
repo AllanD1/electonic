@@ -1,15 +1,16 @@
 // electron startup script
 'use strict';
 
-const electron = require('electron');
+const electron = require('electron'),
+      readline = require('readline'),
+      fs       = require('fs');
 // Module to control application life.
 const app = electron.app;
 // Module to create native browser window.
 const BrowserWindow = electron.BrowserWindow;
 // check for dev mode
 const devMode = process.argv[2] == '-dev' ? true : false;
-// module for getting user input
-const readline = require('readline');
+// interface for getting user input
 const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout
@@ -60,6 +61,15 @@ function rlClose() {
   });
 }
 
+function fileExists(path) {
+  try {
+    return fs.statSync(path).isFile();
+  }
+  catch (err) {
+    return false;
+  }
+}
+
 /**
  * Init script
  */
@@ -104,11 +114,32 @@ function init() {
     });
   }
   else {
-    console.log('\u001b[33m Running app :)');
-    // create window if it doesn't exist
-    if (mainWindow === null) createWindow();
-    // prompt user to close app
-    rlClose();
+    console.log('\u001b[33m = Running app = \u001b[0m');
+
+    let buildRequired = !fileExists(__dirname + '/www/build/js/app.bundle.js');
+
+    if (buildRequired) {
+      console.log('\u001b[33m=== performing first build ===\u001b[0m');
+      const spawn = require('child_process').spawn;
+      const gulp = spawn('gulp', ['build']);
+
+      gulp.stdout.on('data', (data) => { console.log(data.toString().trim()) });
+      gulp.stderr.on('data', (data) => { console.log(data.toString().trim()) });
+      gulp.on('close', (code) => {
+        console.log(`\u001b[32mBuild finished with code ${code}\u001b[0m`);
+        // create window if it doesn't exist
+        if (mainWindow === null) createWindow();
+        // prompt user to close app
+        rlClose();
+      });
+    }
+    else {
+      // create window if it doesn't exist
+      if (mainWindow === null) createWindow();
+      // prompt user to close app
+      rlClose();
+    }
+    
   }
 
 }

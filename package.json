@@ -35,13 +35,14 @@
     "ios",
     {
       "platform": "ios",
-      "version": "",
+      "version": "1.0.0",
       "locator": "ios"
     }
   ],
+  "main": "electron/main.js",
   "scripts": {
-    "dev": "electron main.js -dev",
-    "test": "electron main.js"
+    "dev": "electron electron/dev.js -dev",
+    "test": "electron electron/dev.js"
   },
   "name": "Electonic",
   "packageName": "Electonic",

@@ -31,7 +31,7 @@ function createWindow () {
   // (if dev mode is on, load ionic livereload URL)
   let url = devMode 
     ? 'http://localhost:8100'
-    : 'file://' + __dirname + '/www/index-electron.html';
+    : 'file://' + __dirname + '/../www/index-electron.html';
 
   // load window
   mainWindow.loadURL(url);
@@ -116,7 +116,7 @@ function init() {
   else {
     console.log('\u001b[33m = Running app = \u001b[0m');
 
-    let buildRequired = !fileExists(__dirname + '/www/build/js/app.bundle.js');
+    let buildRequired = !fileExists(__dirname + '/../www/build/js/app.bundle.js');
 
     if (buildRequired) {
       console.log('\u001b[33m=== performing first build ===\u001b[0m');

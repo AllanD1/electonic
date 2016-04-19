@@ -6,6 +6,6 @@ import {Page} from 'ionic-angular';
 })
 export class HomePage {
   constructor() {
-
+    
   }
 }

@@ -28,14 +28,24 @@ Run the scripts inside `package.json`:
 - `npm run test` will only open your app in its current state. No live watching/reloading here.
 
 ## Distribution and Packaging  
+
+**building with electron (desktop)**  
+
 I recommend using [electron-packager](https://github.com/electron-userland/electron-packager) - it has great features and is quite stable.  
 `electron-prebuilt` and `electron-packager` are both included as `devDependencies`.  
+
 If you want to package your app run:  
 `electron-packager . --all`
 
 - for more building and distribution information read [electron-packager](https://github.com/electron-userland/electron-packager).
 - for creating installation wizards see [electron-builder](https://www.npmjs.com/package/electron-builder)
 
+**building with ionic (mobile)**  
+
+This repository is really just an ionic project with electron built into it. So if you're building for mobile follow ionic's or cordova's tutorials on that.  
+`ionic build` will build your app.  
+Remember to add desired platforms `ionic platform add android`.  
+Go here for more information on [ionic build](http://ionicframework.com/docs/v2/cli/build/).
 
 ### TODO
 - [x] configure electron packaging (e.g., building into `.exe`, `.app`, etc.

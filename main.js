@@ -126,11 +126,18 @@ function init() {
       gulp.stdout.on('data', (data) => { console.log(data.toString().trim()) });
       gulp.stderr.on('data', (data) => { console.log(data.toString().trim()) });
       gulp.on('close', (code) => {
-        console.log(`\u001b[32mBuild finished with code ${code}\u001b[0m`);
-        // create window if it doesn't exist
-        if (mainWindow === null) createWindow();
-        // prompt user to close app
-        rlClose();
+        if (code == 0) {
+          console.log(`\u001b[32mBuild finished successfully\u001b[0m`);
+          // create window if it doesn't exist
+          if (mainWindow === null) createWindow();
+          // prompt user to close app
+          rlClose();
+        }
+        else {
+          console.log(`\u001b[31mError: Could not build. Have you run 'npm install'?\u001b[0m`);
+          process.exit(1);
+        }
+        
       });
     }
     else {

@@ -12,6 +12,8 @@
   },
   "devDependencies": {
     "del": "2.2.0",
+    "electron-packager": "^7.0.0",
+    "electron-prebuilt": "^0.37.6",
     "gulp": "3.9.1",
     "gulp-watch": "4.3.5",
     "ionic-gulp-browserify-es2015": "^1.0.2",
@@ -41,6 +43,8 @@
     "dev": "electron main.js -dev",
     "test": "electron main.js"
   },
-  "name": "ionic",
-  "description": "ionic: An Ionic project"
+  "name": "Electonic",
+  "packageName": "Electonic",
+  "version": "1.0.0",
+  "description": "a boilerplate combining electron, ionic2 and cordova for creating truly cross platform apps using web technologies"
 }

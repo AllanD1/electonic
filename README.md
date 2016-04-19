@@ -6,8 +6,12 @@ _a boilerplate combining electron, ionic2 and cordova for creating truly cross p
   <img src="https://raw.githubusercontent.com/callodacity/electonic/files/img/cordova-final.png" width="70"/>
 </p>
 
-
-
+<p align="center">
+  <a href="http://electron.atom.io/">electron</a> &#8226;
+  <a href="http://ionicframework.com/">ionic</a> &#8226;
+  <a href="https://cordova.apache.org/">cordova</a> 
+  
+</p>
 
 ## Setup
 1. Make sure you have `ionic@beta` installed globally with `npm`.  
@@ -48,6 +52,8 @@ Remember to add desired platforms `ionic platform add android`.
 Go here for more information on [ionic build](http://ionicframework.com/docs/v2/cli/build/).
 
 ### TODO
-- [x] <s>configure electron packaging (e.g., building into `.exe`, `.app`, etc.</s> configure electron packaging - still not working 100%
+- [x] <s>configure electron packaging (e.g., building into `.exe`, `.app`, etc.</s>  
+configure electron packaging - still not working 100%
 - [ ] improve electron packaging with local npm scripts 
+- [ ] fix weird bugs on windows systems
 - [ ] think of other improvements for this boilerplate

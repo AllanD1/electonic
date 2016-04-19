@@ -21,5 +21,5 @@ Run the scripts inside `package.json`:
 
 
 ### TODO
-* configure electron packaging (e.g., building into `.exe`, `.app`, etc.
-* think of other improvements for this boilerplate
+- [ ] configure electron packaging (e.g., building into `.exe`, `.app`, etc.
+- [ ] think of other improvements for this boilerplate

@@ -10,12 +10,10 @@ _a boilerplate combining electron, ionic2 and cordova for creating truly cross p
 
 
 ## Setup
-1. Make sure you have `electron-prebuilt` installed globally with `npm`.  
-`npm install -g electron-prebuilt`
-2. You will also need to have Ionic2 installed  
+1. Make sure you have `ionic@beta` installed globally with `npm`.  
 `npm install -g ionic@beta`
-3. clone this repo 
-4. run `npm install`
+2. clone this repo `git clone https://github.com/callodacity/electonic.git`
+3. run `npm install`
 
 ## Usage
 
@@ -27,11 +25,12 @@ Use the [ionic CLI](http://ionicframework.com/docs/v2/getting-started/installati
 
 Run the scripts inside `package.json`:
 - `npm run dev` will enable dev mode, using ionic's gulp watch process and automatically opening an electron app directed towards your development livereload server.
-- `npm run test` will only open your app in its current state. No watching/livereloading here.
+- `npm run test` will only open your app in its current state. No live watching/reloading here.
 
 ## Distribution and Packaging  
 I recommend using [electron-packager](https://github.com/electron-userland/electron-packager) - it has great features and is quite stable.  
-`electron-prebuilt` and `electron-packager` are both installed as `devDependencies` so if you want to package your app run:  
+`electron-prebuilt` and `electron-packager` are both included as `devDependencies`.  
+If you want to package your app run:  
 `electron-packager . --all`
 
 - for more building and distribution information read [electron-packager](https://github.com/electron-userland/electron-packager).

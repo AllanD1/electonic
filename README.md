@@ -11,7 +11,7 @@ _a boilerplate combining electron, ionic2 and cordova for creating truly cross p
 
 **developing for mobile platforms**  
 
-Use the ionic CLI as normal i.e. `ionic serve`, `ionic build`, `ionic run`, etc.  
+Use the [ionic CLI](http://ionicframework.com/docs/v2/getting-started/installation/) as normal i.e. `ionic serve`, `ionic build`, `ionic run`, etc.  
 
 **developing for desktop platforms**  
 

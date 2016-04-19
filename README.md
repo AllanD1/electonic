@@ -48,6 +48,6 @@ Remember to add desired platforms `ionic platform add android`.
 Go here for more information on [ionic build](http://ionicframework.com/docs/v2/cli/build/).
 
 ### TODO
-- [x] configure electron packaging (e.g., building into `.exe`, `.app`, etc.
+- [x] <s>configure electron packaging (e.g., building into `.exe`, `.app`, etc.</s> configure electron packaging - still not working 100%
 - [ ] improve electron packaging with local npm scripts 
 - [ ] think of other improvements for this boilerplate

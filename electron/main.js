@@ -1,1 +1,0 @@
-// electron startup script

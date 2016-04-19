@@ -38,8 +38,8 @@
     }
   ],
   "scripts": {
-    "dev": "electron ../electron/main.js -dev",
-    "test": "electron ../electron/main.js"
+    "dev": "electron main.js -dev",
+    "test": "electron main.js"
   },
   "name": "ionic",
   "description": "ionic: An Ionic project"

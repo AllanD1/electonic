@@ -1,7 +1,7 @@
 # Specifies intentionally untracked files to ignore when using Git
 # http://git-scm.com/docs/gitignore
 
-# IDE files
+### IDE files
 *~
 *.sw[mnpcod]
 *.log
@@ -11,7 +11,7 @@ log.txt
 *.sublime-project
 *.sublime-workspace
 
-# build files
+### build files
 .idea/
 .sass-cache/
 .versions/
@@ -21,26 +21,21 @@ node_modules/
 tmp/
 temp/
 www/build/
-$RECYCLE.BIN/
 
-# OS files
+### OS files
 .DS_Store
 Thumbs.db
 UserInterfaceState.xcuserstate
+$RECYCLE.BIN/
 
-# ionic/cordova files
+### ionic/cordova files
 platforms/
 plugins/
 
-# project files
-ionic/.idea/
-ionic/.sass-cache/
-ionic/.versions/
-ionic/coverage/
-ionic/dist/
-ionic/node_modules/
-ionic/tmp/
-ionic/temp/
-ionic/www/build/
-ionic/plugins/
-ionic/platforms/
+### packaged app files
+*-linux-ia32/
+*-linux-x64/
+*-win32-ia32/
+*-darwin-x64/
+*-mas-x64/
+*-win32-x64/

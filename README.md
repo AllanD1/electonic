@@ -18,6 +18,7 @@ _a boilerplate combining electron, ionic2 and cordova for creating truly cross p
 `npm install -g ionic@beta`
 2. clone this repo `git clone https://github.com/callodacity/electonic.git`
 3. run `npm install`
+4. run `ionic serve -b` at least once to pre-configure project
 
 ## Usage
 
@@ -53,6 +54,6 @@ Go here for more information on [ionic build](http://ionicframework.com/docs/v2/
 
 ### TODO
 - [x] configure electron packaging (e.g., building into `.exe`, `.app`, etc.
-- [x] fix weird bugs on windows systems
+- [ ] attempt to find a fix for readline.js on windows systems (you won't be able to input into command prompt, just terminate with crtl+c)
 - [ ] remove unnecessary files from final package through `ionic build` / `electron-packager` (include only `www/` and `main.js`
 - [ ] think of other improvements for this boilerplate

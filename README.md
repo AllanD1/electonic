@@ -54,5 +54,5 @@ Go here for more information on [ionic build](http://ionicframework.com/docs/v2/
 ### TODO
 - [x] configure electron packaging (e.g., building into `.exe`, `.app`, etc.
 - [x] fix weird bugs on windows systems
-- [ ] remove unnecessary files from final package through `ionic build` / `electron-packager`
+- [ ] remove unnecessary files from final package through `ionic build` / `electron-packager` (include only `www/` and `main.js`
 - [ ] think of other improvements for this boilerplate

@@ -18,7 +18,6 @@ _a boilerplate combining electron, ionic2 and cordova for creating truly cross p
 `npm install -g ionic@beta`
 2. clone this repo `git clone https://github.com/callodacity/electonic.git`
 3. run `npm install`
-4. run `ionic serve -b` at least once to pre-configure project
 
 ## Usage
 

@@ -78,8 +78,11 @@ function init() {
   if (devMode) {
     console.log('\u001b[31m=== dev mode enabled ===\u001b[0m');
 
-    const spawn = require('child_process').spawn;
-    const ionic = spawn('ionic', ['serve', '-b']);
+    // const spawn = require('child_process').spawn;
+    // const ionic = spawn('ionic', ['serve', '-b']);
+    const exec = require('child_process').exec;
+    const ionic = exec('ionic serve -b');
+    
 
     ionic.stdout.on('data', (data) => {
       // check if ionic is asking for input
@@ -120,8 +123,11 @@ function init() {
 
     if (buildRequired) {
       console.log('\u001b[33m=== performing first build ===\u001b[0m');
-      const spawn = require('child_process').spawn;
-      const gulp = spawn('gulp', ['build']);
+      // const spawn = require('child_process').spawn;
+      // const gulp = spawn('gulp', ['build']);
+      const exec = require('child_process').exec;
+      const gulp = exec('gulp build');
+
 
       gulp.stdout.on('data', (data) => { console.log(data.toString().trim()) });
       gulp.stderr.on('data', (data) => { console.log(data.toString().trim()) });

@@ -42,7 +42,11 @@
   "main": "electron/main.js",
   "scripts": {
     "dev": "electron electron/dev.js -dev",
-    "test": "electron electron/dev.js"
+    "test": "electron electron/dev.js",
+
+    "clear:darwin": "rm -rf *-darwin-x64",
+
+    "pack:darwin": "npm run clear:darwin && electron-packager ./ --platform=darwin --arch=x64 --ignore=\"/electron/dev.js\" --ignore=\"/app/\" --ignore=\"/config.xml\" --ignore=\"/gulpfile.js\" --ignore=\"/hooks/\" --ignore=\"/ionic.config.json\" --ignore=\"/node_modules/\" --ignore=\"/README.md\" --ignore=\"/resources/\""
   },
   "name": "Electonic",
   "packageName": "Electonic",

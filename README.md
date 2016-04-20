@@ -1,5 +1,11 @@
 # Electonic
-_a boilerplate combining electron, ionic2 and cordova for creating truly cross platform apps using web technologies._
+
+<p align="center">
+  <i>
+  a boilerplate combining electron, ionic2 and cordova for creating truly cross platform apps using web technologies.
+  </i>
+</p>  
+
 <p align="center">
   <img src="https://raw.githubusercontent.com/callodacity/electonic/files/img/electron-final.png" width="78"/>
   <img src="https://raw.githubusercontent.com/callodacity/electonic/files/img/ionic-final.png" width="70"/>
@@ -10,7 +16,6 @@ _a boilerplate combining electron, ionic2 and cordova for creating truly cross p
   <a href="http://electron.atom.io/">electron</a> &#8226;
   <a href="http://ionicframework.com/">ionic</a> &#8226;
   <a href="https://cordova.apache.org/">cordova</a> 
-  
 </p>
 
 ## Setup

@@ -66,5 +66,13 @@ This repository is really just an ionic project with electron built into it. So 
 ### TODO
 - [x] configure electron packaging (e.g., building into `.exe`, `.app`, etc.
 - [ ] attempt to find a fix for readline.js on windows systems (you won't be able to input into command prompt, just terminate with crtl+c)
-- [ ] remove unnecessary files from final package through `ionic build` / `electron-packager` (include only `www/` and `main.js`
-- [ ] think of other improvements for this boilerplate
+- [ ] remove unnecessary files from final package through `ionic build` / `electron-packager` (include only `www/` and `main.js`)
+  - [x] include only pertinent files of final app
+  - [ ] exclude desktop files on mobile production apps and vice versa
+- [ ] Make an electonic CLI
+  - [ ] Be able to choose desktop / mobile / all as production platforms
+  - [ ] Make a wrapper for Ionic (for choosing TypeScript/JavaScript projects and their starter templates)
+  - [ ] Be able to choose vanilla AngularJS / Ionic / no library
+    - [ ] perhaps adding support for adding library of choice?
+
+- [x] think of other improvements for this boilerplate

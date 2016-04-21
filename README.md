@@ -66,7 +66,7 @@ This repository is really just an ionic project with electron built into it. So 
 ### TODO
 - [x] configure electron packaging (e.g., building into `.exe`, `.app`, etc.
 - [ ] attempt to find a fix for readline.js on windows systems (you won't be able to input into command prompt, just terminate with crtl+c)
-- [ ] remove unnecessary files from final package through `ionic build` / `electron-packager` (include only `www/` and `main.js`)
+- [ ] remove unnecessary files from final packaged app
   - [x] include only pertinent files of final app
   - [ ] exclude desktop files on mobile production apps and vice versa
 - [ ] Make an electonic CLI

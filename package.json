@@ -39,14 +39,18 @@
       "locator": "ios"
     }
   ],
-  "main": "electron/main.js",
+  "main": "www/main.js",
   "scripts": {
-    "dev": "electron electron/dev.js -dev",
-    "test": "electron electron/dev.js",
+    "dev": "electron dev.js -dev",
+    "test": "electron dev.js",
 
-    "clear:darwin": "rm -rf *-darwin-x64",
+    "clear:osx": "rm -rf *-darwin-x64; rm -rf *-mas-x64",
+    "clear:win": "rm -rf *-win32-ia32; rm -rf *-win32-x64",
+    "clear:nix": "rm -rf *-linux-ia32; rm -rf *-linux-x64",
 
-    "pack:darwin": "npm run clear:darwin && electron-packager ./ --platform=darwin --arch=x64 --ignore=\"/electron/dev.js\" --ignore=\"/app/\" --ignore=\"/config.xml\" --ignore=\"/gulpfile.js\" --ignore=\"/hooks/\" --ignore=\"/ionic.config.json\" --ignore=\"/node_modules/\" --ignore=\"/README.md\" --ignore=\"/resources/\""
+    "pack:osx": "npm run clear:osx && electron-packager ./www/ --platform=darwin,mas --arch=x64 --asar ",
+    "pack:win": "npm run clear:win && electron-packager ./www/ --platform=win32 --arch=ia32,x64 --asar ",
+    "pack:nix": "npm run clear:nix && electron-packager ./www/ --platform=linux --arch=ia32,x64 --asar "
   },
   "name": "Electonic",
   "packageName": "Electonic",

@@ -1,0 +1,7 @@
+{
+  "main": "main.js",
+  "name": "Electonic",
+  "packageName": "Electonic",
+  "version": "1.0.0",
+  "description": "a boilerplate combining electron, ionic2 and cordova for creating truly cross platform apps using web technologies"
+}

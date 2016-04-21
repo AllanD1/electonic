@@ -19,7 +19,7 @@ function createWindow () {
 
   // and load the index.html of the app.
   // (if dev mode is on, load ionic livereload URL)
-  let url = 'file://' + __dirname + '/../www/index-electron.html';
+  let url = 'file://' + __dirname + '/index-electron.html';
 
   // load window
   mainWindow.loadURL(url);

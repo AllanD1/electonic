@@ -43,9 +43,15 @@ Run the scripts inside `package.json`:
 I recommend using [electron-packager](https://github.com/electron-userland/electron-packager) - it has great features and is quite stable.  
 `electron-prebuilt` and `electron-packager` are both included as `devDependencies`.  
 
-If you want to package your app run:  
-`electron-packager . --all`
+If you want to package your app run you can use these npm scripts:
+_These scripts will overwrite old packaged apps in the same directory_
 
+- `npm run pack:osx` --> packages into `.app` for osx. Both Darwin and MAS.
+- `npm run pack:win` --> packages into `.exe` (`ia32` and `x64`) for Windows.
+- `npm run pack:nix` --> packages into both `ia32` and `x64` for Linux.
+
+_If you plan to use your own parameters for `electron-packager` make sure the `<sourcedir> is set to `./www/`._
+ 
 - for more building and distribution information read [electron-packager](https://github.com/electron-userland/electron-packager).
 - for creating installation wizards see [electron-builder](https://www.npmjs.com/package/electron-builder)
 

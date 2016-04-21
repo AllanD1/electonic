@@ -26,11 +26,11 @@
 
 ## Usage
 
-**developing for mobile platforms**  
+**Developing for mobile platforms**  
 
 Use the [ionic CLI](http://ionicframework.com/docs/v2/getting-started/installation/) as normal i.e. `ionic serve`, `ionic build`, `ionic run`, etc.  
 
-**developing for desktop platforms**  
+**Developing for desktop platforms**  
 
 Run the scripts inside `package.json`:
 - `npm run dev` will enable dev mode, using ionic's gulp watch process and automatically opening an electron app directed towards your development livereload server.
@@ -38,7 +38,7 @@ Run the scripts inside `package.json`:
 
 ## Distribution and Packaging  
 
-**building with electron (desktop)**  
+**Building with electron (desktop)**  
 
 I recommend using [electron-packager](https://github.com/electron-userland/electron-packager) - it has great features and is quite stable.  
 `electron-prebuilt` and `electron-packager` are both included as `devDependencies`.  
@@ -55,12 +55,12 @@ _If you plan to use your own parameters for `electron-packager` make sure the `<
 - for more building and distribution information read [electron-packager](https://github.com/electron-userland/electron-packager).
 - for creating installation wizards see [electron-builder](https://www.npmjs.com/package/electron-builder)
 
-**building with ionic (mobile)**  
+**Building with ionic (mobile)**  
 
 This repository is really just an ionic project with electron built into it. So if you're building for mobile follow ionic's or cordova's tutorials on that.  
-`ionic build` will build your app.  
-Remember to add desired platforms `ionic platform add android`.  
-Go here for more information on [ionic build](http://ionicframework.com/docs/v2/cli/build/).
+- `ionic build` will build your app.  
+- Remember to add desired platforms `ionic platform add android`.  
+- Go here for more information on [ionic build](http://ionicframework.com/docs/v2/cli/build/).
 
 ### TODO
 - [x] configure electron packaging (e.g., building into `.exe`, `.app`, etc.

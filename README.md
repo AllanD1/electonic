@@ -50,7 +50,7 @@ If you want to package your app run you can use these npm scripts:
 - `npm run pack:win` --> packages into `.exe` (`ia32` and `x64`) for Windows.
 - `npm run pack:nix` --> packages into both `ia32` and `x64` for Linux.
 
-_If you plan to use your own parameters for `electron-packager` make sure the `<sourcedir> is set to `./www/`._
+_If you plan to use your own parameters for `electron-packager` make sure the `<sourcedir>` is set to `./www/`._
  
 - for more building and distribution information read [electron-packager](https://github.com/electron-userland/electron-packager).
 - for creating installation wizards see [electron-builder](https://www.npmjs.com/package/electron-builder)

@@ -43,7 +43,8 @@ Run the scripts inside `package.json`:
 I recommend using [electron-packager](https://github.com/electron-userland/electron-packager) - it has great features and is quite stable.  
 `electron-prebuilt` and `electron-packager` are both included as `devDependencies`.  
 
-If you want to package your app run you can use these npm scripts:
+If you want to package your app run you can use these npm scripts:  
+
 _These scripts will overwrite old packaged apps in the same directory_
 
 - `npm run pack:osx` --> packages into `.app` for osx. Both Darwin and MAS.

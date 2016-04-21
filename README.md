@@ -20,7 +20,7 @@
 
 ## Setup
 1. Make sure you have `ionic@beta` installed globally with `npm`.  
-- `npm install -g ionic@beta`
+--> `npm install -g ionic@beta`
 2. clone this repo `git clone https://github.com/callodacity/electonic.git`
 3. run `npm install`
 

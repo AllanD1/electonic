@@ -1,2 +1,1 @@
-# electonic
-electron - cordova - ionic mix
+# Electonic CLI

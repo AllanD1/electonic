@@ -2,7 +2,10 @@
   "name": "electonic",
   "version": "0.0.5",
   "description": "electonic",
-  "main": "index.js",
+  "preferGlobal": true,
+  "bin": {
+    "electonic": "bin/electonic"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

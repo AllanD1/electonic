@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+
+'use strict';
+
+process.title = 'electonic';
+
+var ElectonicCLI = require('../lib/cli');
+
+ElectonicCLI.run(process.argv);

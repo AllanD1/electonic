@@ -1,6 +1,6 @@
 {
   "name": "electonic",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "electonic",
   "main": "index.js",
   "scripts": {

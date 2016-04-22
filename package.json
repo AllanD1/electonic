@@ -1,0 +1,28 @@
+{
+  "name": "electonic",
+  "version": "0.0.2",
+  "description": "electonic",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/callodacity/electonic.git"
+  },
+  "keywords": [
+    "cli",
+    "electonic",
+    "electronic",
+    "angular2",
+    "ionic2",
+    "desktop",
+    "mobile"
+  ],
+  "author": "Callum Oz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/callodacity/electonic/issues"
+  },
+  "homepage": "https://github.com/callodacity/electonic#readme"
+}

@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/callodacity/electonic/issues"
   },
-  "homepage": "https://github.com/callodacity/electonic#readme"
+  "homepage": "https://github.com/callodacity/electonic#readme",
+  "dependencies": {
+    "colors": "^1.1.2"
+  }
 }

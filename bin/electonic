@@ -6,4 +6,4 @@ process.title = 'electonic';
 
 var ElectonicCLI = require('../lib/cli');
 
-ElectonicCLI.run(process.argv);
+ElectonicCLI.init(process.argv);

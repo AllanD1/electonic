@@ -18,6 +18,12 @@
   <a href="https://cordova.apache.org/">cordova</a> 
 </p>
 
+
+<p color="red">
+  Please note that this is a current work in progress! I'm currently devoting my time to improving the electonic CLI (see branch CLI)
+</p>
+
+
 ## Setup
 1. Make sure you have `ionic@beta` installed globally with `npm`.  
 --> `npm install -g ionic@beta`

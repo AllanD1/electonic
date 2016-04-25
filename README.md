@@ -19,8 +19,10 @@
 </p>
 
 
-<p align="center" style="color: red">
-  Please note that this is a current work in progress! I'm currently devoting my time to improving the electonic CLI (see branch CLI)
+<p align="center">
+  <strong>
+    Please note that this is a current work in progress! I'm currently devoting my time to improving the electonic CLI (see branch CLI)
+  </strong>
 </p>
 
 

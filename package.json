@@ -30,6 +30,7 @@
   "homepage": "https://github.com/callodacity/electonic#readme",
   "dependencies": {
     "colors": "^1.1.2",
+    "fs": "0.0.2",
     "minimist": "^1.2.0"
   }
 }

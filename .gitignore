@@ -33,14 +33,4 @@ platforms/
 plugins/
 
 # project files
-ionic/.idea/
-ionic/.sass-cache/
-ionic/.versions/
-ionic/coverage/
-ionic/dist/
-ionic/node_modules/
-ionic/tmp/
-ionic/temp/
-ionic/www/build/
-ionic/plugins/
-ionic/platforms/
+environments/*

@@ -1,5 +1,7 @@
 # Electonic
 
+## **Please note this repo is not under active development.**
+
 <p align="center">
   <i>
   a boilerplate combining electron, ionic2 and cordova for creating truly cross platform apps using web technologies.
